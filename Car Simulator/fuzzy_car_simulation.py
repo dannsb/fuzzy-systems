@@ -74,7 +74,7 @@ class FuzzyCarAvoidance:
         self.car_radius += (target_radius - self.car_radius) * dt * 3
         
         # Limit radius
-        self.car_radius = max(150, min(300, self.car_radius))
+        self.car_radius = max(150, self.car_radius)
         
         # Circular movement
         angular_speed = self.speed / self.car_radius * dt
